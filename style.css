@@ -1,0 +1,132 @@
+body{
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("backgrond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+.img{
+
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.facebook{
+    widows: 30px;
+    height: 30px;
+    animation-name: facebook;
+    animation-duration: 2s;
+    animation-delay: 1.0s;
+    animation-fill-mode: backwards;
+    padding-right: 5px;
+}
+.instagram{
+    widows: 30px;
+    height: 30px;
+    padding-right: 5px;
+    animation-name: insta;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+.git{
+    widows: 30px;
+    height: 30px;
+    background-color: white;
+    animation-name: git;
+    animation-duration: 2s;
+    animation-delay: 2.0s;
+    animation-fill-mode: backwards;
+}
+.linkedin{
+    widows: 30px;
+    height: 30px;
+    padding-right: 5px;
+    animation-name: link;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+}
+@keyframes image{
+    from{
+        transform: translateX(150px);
+       opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+@keyframes facebook{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes insta{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes git{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes link{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+h2:hover{
+    text-transform: capitalize;
+   
+    cursor: pointer;
+}
+h2{
+    animation-name: image;
+    animation-duration: 4s;
+    animation-delay: 0;
+    overflow: hidden;
+}
+h4{
+    color: blanchedalmond;
+    animation-name: h4;
+    animation-duration: 4s;
+    animation-delay: 0;
+    overflow: hidden;
+}
+@keyframes h4{
+    0%{
+        transform: translateX(0);
+       opacity: 0;
+    }
+    75%{
+        transform: translateX(150px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
